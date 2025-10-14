@@ -7,10 +7,9 @@
 * Entregable: Si.
 
 # Grupo
-
-- Estudiante 1 (Legajo 1) - cor...@estudiante1.com
-- Estudiante 2 (Legajo 2) - cor...@estudiante2.com
-
+-Candela Maniscalco 195345
+-Tomas Talucci 188025
+-Nahuel Tamburri 165046
 # Contexto / Escenario
 
 ¡El Torneo de los Tres Reinos es inminente! La Academia de Hechicería Arcana ha reunido a un concilio de los más grandes artesanos para potenciar su arsenal. Un maestro **Herrero Enano** aplicará su magia rúnica a las _varitas_, y un delicado **Artesano Élfico** es especialista en encantar _amuletos_. Además, un sabio **Escriba Arcano** ha sido convocado para re-inscribir los _pergaminos_ de poder, aunque su magia es volátil y arriesgada. Finalmente, un **Alquimista Experto** está 
