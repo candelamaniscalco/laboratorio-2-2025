@@ -2,18 +2,19 @@ package ar.edu.unlu.poo.labo2.artefactos;
 
 import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
 import ar.edu.unlu.poo.labo2.artefactos.ValidadorDeArtefactos;
+import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
 
 import java.util.*;
 
 public class CatalogoArtefactos {
     //COLECCION QUE EVITA DUPLICADOS
     Set<Artefacto> inventario = new HashSet<>();
-    private ValidadorDeArtefactos miValidador;
+    private EstrategiaDeMejora miValidador;
 
     //METODOS
 
-    public CatalogoArtefactos(ValidadorDeArtefactos validador){
-        this.miValidador = validador;
+    public CatalogoArtefactos(EstrategiaDeMejora estrategia){
+        this.miValidador = estrategia;
     }
 
     public void agregarArtefacto(Artefacto artefacto) {

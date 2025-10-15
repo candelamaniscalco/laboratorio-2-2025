@@ -1,6 +1,8 @@
-package ar.edu.unlu.poo.labo2.artefactos;
+package ar.edu.unlu.poo.labo2.estrategias;
 
-public abstract class EscribaArcano implements EstrategiaDeMejora{
+import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
+
+public  class EscribaArcano implements EstrategiaDeMejora {
 
     @Override
     public void mejorar(Artefacto artefacto) {

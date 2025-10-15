@@ -1,7 +1,7 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
-import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
-import ar.edu.unlu.poo.labo2.artefactos.CatalogoArtefactos;
+import ar.edu.unlu.poo.labo2.estrategias.AlquimistaExperto;
+import ar.edu.unlu.poo.labo2.estrategias.EscribaArcano;
 import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
 import ar.edu.unlu.poo.labo2.estrategias.ForjadorDeRunas;
 import ar.edu.unlu.poo.labo2.estrategias.JoyeroElfico;

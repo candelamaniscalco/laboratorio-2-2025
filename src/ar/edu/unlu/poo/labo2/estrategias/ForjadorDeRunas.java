@@ -1,6 +1,8 @@
-package ar.edu.unlu.poo.labo2.artefactos;
+package ar.edu.unlu.poo.labo2.estrategias;
 
-public class ForjadorDeRunas implements  EstrategiaDeMejora {
+import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
+
+public class ForjadorDeRunas implements EstrategiaDeMejora {
 
     public ForjadorDeRunas(){
 

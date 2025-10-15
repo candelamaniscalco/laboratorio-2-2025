@@ -1,6 +1,8 @@
-package ar.edu.unlu.poo.labo2.artefactos;
+package ar.edu.unlu.poo.labo2.estrategias;
 
-public class AlquimistaExperto implements EstrategiaDeMejora{
+import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
+
+public class AlquimistaExperto implements EstrategiaDeMejora {
 
 
     @Override
