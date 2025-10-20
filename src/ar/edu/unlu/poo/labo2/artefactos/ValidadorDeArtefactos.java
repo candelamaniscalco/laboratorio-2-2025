@@ -1,4 +1,6 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
-public class ValidadorDeArtefactos {
+public interface ValidadorDeArtefactos {
+
+
 }

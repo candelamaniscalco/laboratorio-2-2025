@@ -6,6 +6,9 @@ public  class Artefacto {
     private int poder; //VALIDAR QUE ESTE ENTRE 1 Y 100
     private String tipo; //POCION-PERGAMINO-AMULETO-VARITA
 
+    private ModoComparacion modoComparacion;
+
+
     public Artefacto(String nombre, int poder, String tipo) {
         this.nombre = nombre;
         this.poder = poder;
@@ -28,20 +31,33 @@ public  class Artefacto {
         return tipo;
     }
 
+
+    public void setModoComparacion(ModoComparacion nuevoModo){
+        this.modoComparacion = nuevoModo;
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Artefacto artefacto = (Artefacto) o;
-        return Objects.equals(nombre, artefacto.nombre);
+
+        return switch (modoComparacion) {
+            case POR_NOMBRE -> Objects.equals(nombre, artefacto.nombre);
+            case POR_TIPO -> Objects.equals(tipo, artefacto.tipo);
+            default -> false;
+        };
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nombre);
+        return switch(modoComparacion){
+            case POR_NOMBRE -> Objects.hash(nombre);
+            case POR_TIPO -> Objects.hash(tipo);
+        };
     }
 
-    public Object getNivelDePoder() {
-        return null;
-    }
+
+
 }

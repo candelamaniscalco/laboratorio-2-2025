@@ -1,20 +1,21 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
-import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
-import ar.edu.unlu.poo.labo2.artefactos.ValidadorDeArtefactos;
 import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
 
 import java.util.*;
 
-public class CatalogoArtefactos {
+public class CatalogoArtefactos{
     //COLECCION QUE EVITA DUPLICADOS
     Set<Artefacto> inventario = new HashSet<>();
-    private EstrategiaDeMejora miValidador;
+    private EstrategiaDeMejora estrategia;
+    //private ValidadorDeArtefactos miValidador;
 
     //METODOS
 
     public CatalogoArtefactos(EstrategiaDeMejora estrategia){
-        this.miValidador = estrategia;
+        this.estrategia = estrategia;
+
+
     }
 
     public void agregarArtefacto(Artefacto artefacto) {
@@ -74,6 +75,10 @@ public class CatalogoArtefactos {
     }
 
     public void aplicarMejoras() {
-
+        for (Artefacto artefacto : inventario) {
+            this.estrategia.mejorar(artefacto);
+        }
     }
+
+
 }
